@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="128.0dp"
+        android:id="@+id/primScrollView">
+        <LinearLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:text="Primary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/primListButton" />
+            <ListView
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/primListView" />
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="128.0dp"
+        android:id="@+id/secScrollView">
+        <LinearLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:text="Secondary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/secListButton" />
+            <ListView
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/secListView" />
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="128.0dp"
+        android:id="@+id/auxScrollView">
+        <LinearLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:text="Aux"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/auxListButton" />
+            <ListView
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/auxListView" />
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="128.0dp"
+        android:id="@+id/coreScrollView">
+        <LinearLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:text="Core"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/coreListButton" />
+            <ListView
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/coreListView" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

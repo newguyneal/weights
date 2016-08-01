@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ProgramTypeLinear">
+    <Button
+        android:text="2 Day Split"
+        android:layout_width="match_parent"
+        android:layout_height="128.0dp"
+        android:background="@drawable/BabyBlueButton"
+        android:layout_margin="5dp"
+        android:id="@+id/twodaysplitbutton" />
+    <Button
+        android:text="4 Day Split"
+        android:layout_width="match_parent"
+        android:layout_height="128.0dp"
+        android:background="@drawable/BabyBlueButton"
+        android:layout_margin="5dp"
+        android:id="@+id/fourdaysplitbutton" />
+    <Button
+        android:text="Full Body"
+        android:layout_width="match_parent"
+        android:layout_height="128.0dp"
+        android:background="@drawable/BabyBlueButton"
+        android:layout_margin="5dp"
+        android:id="@+id/fullbodybutton" />
+    <Button
+        android:text="Randomize"
+        android:layout_width="match_parent"
+        android:layout_height="128.0dp"
+        android:background="@drawable/RedButton"
+        android:layout_margin="5dp"
+        android:id="@+id/randomizetypebutton" />
+</LinearLayout>
