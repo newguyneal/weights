@@ -28,6 +28,7 @@ namespace weights
             base.OnCreate(savedInstanceState);
 
             // Define some data.
+            SetContentView(Resource.Layout.WorkoutDetailsLayout);
 
 
             Init();

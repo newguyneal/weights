@@ -36,11 +36,12 @@ namespace weights
             Button randomize = FindViewById<Button>(Resource.Id.randomizetypebutton);
             var activity = new Intent(this, typeof(FourDaySplitActivity));
             ButtonInit(four_day_split,activity);
+
+            //todo: add ButtonInit for all buttons add templated workouts for each case
         }
 
         private void ButtonInit(Button b, Intent activity)
         {
-            
             
             b.Click += delegate
             {
