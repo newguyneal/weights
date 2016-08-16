@@ -107,7 +107,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\ExerciseListViewCreator.cs" />
+    <Compile Include="Services\ExerciseListViewCreator.cs" />
     <Compile Include="CreateNewActivity.cs" />
     <Compile Include="ExerciseListActivity.cs" />
     <Compile Include="ExerciseToProgramActivity.cs" />
@@ -126,6 +126,7 @@
     <Compile Include="ProgramTypeActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\RandomizedWorkoutCreator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

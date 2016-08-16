@@ -16,6 +16,7 @@ namespace weights.Models
 {
     public class Workout
     {
+        #region Fields
         private string _split;
         private string _group;
         private int _reps;
@@ -25,10 +26,26 @@ namespace weights.Models
         private List<Auxilary> _a;
         private List<Core> _c;
         private List<string> _records;
+        #endregion
 
+        #region Constructors
         //default constructor
         public Workout()
         { }
+
+        /// <summary>
+        /// this constructor takes a group, split, rep range, week, and a single exercise to add to the workout
+        /// </summary>
+        /// <param name="split"></param>
+        /// <param name="grp"></param>
+        /// <param name="reps"></param>
+        /// <param name="p"></param>
+        /// <param name="s"></param>
+        /// <param name="a1"></param>
+        /// <param name="a2"></param>
+        /// <param name="a3"></param>
+        /// <param name="c"></param>
+        /// <param name="week"></param>
         public Workout(string split,string grp,int reps, Primary p, Secondary s, Auxilary a1, Auxilary a2, Auxilary a3, Core c, int week)
         {
             _split = split;
@@ -44,6 +61,33 @@ namespace weights.Models
             PopulateRecords();
         }
 
+        /// <summary>
+        /// this constructor takes a group, split, rep range, week, and  a list of exercises to add to each type of exercise in the workout
+        /// </summary>
+        /// <param name="split"></param>
+        /// <param name="grp"></param>
+        /// <param name="reps"></param>
+        /// <param name="p"></param>
+        /// <param name="s"></param>
+        /// <param name="a1"></param>
+        /// <param name="c"></param>
+        /// <param name="week"></param>
+        public Workout(string split, string grp, int reps, List<Primary> p, List<Secondary> s, List<Auxilary> a1, List<Core> c, int week)
+        {
+            _split = split;
+            _group = grp;
+            _reps = reps;
+            _p = p;
+            _s = s;
+            _a = a1;
+            _c = c;
+            _week_no = week;
+            PopulateRecords();
+        }
+        #endregion
+
+
+        #region Properties
         //Getters and setters
         public List<Primary> Primaries
         {
@@ -106,11 +150,13 @@ namespace weights.Models
         public List<string> Records
         {
             get { return _records; }
-            set { _records = value; }
+            set { _records = value;  }
             
         }
-        
+        #endregion
 
+
+        #region Methods
         //method that populates the records list with empty strings to hold data
         private void PopulateRecords()
         {
@@ -149,6 +195,8 @@ namespace weights.Models
                 _records.Add("");
             }
         }
-    
+
+        #endregion
+
     }
 }

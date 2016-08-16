@@ -12,7 +12,7 @@ using Android.Widget;
 
 using weights.Models;
 
-namespace weights.Controllers
+namespace weights.Services
 {
     class ExerciseListViewCreator
     {
